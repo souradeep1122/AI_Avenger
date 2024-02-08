@@ -178,3 +178,15 @@
     text-decoration: none;
     color: black;
 }
+
+/*footer*/
+.footer{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+  
+  }
