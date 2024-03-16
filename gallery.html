@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Image Gallery</title>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .member {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .member:hover {
+    transform: translateY(-10px);
+  }
+
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+
+  .member h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .member p {
+    margin: 0;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nleft">
+              <a href="/Cover" class="nlink">Home</a>
+              <a href="/places" class="nlink">Places</a>
+              <a href="" class="nlink">Gallery</a>
+            </div>
+            <div class="nmid">
+              <a href="" class="nlink">Souradeep</a>
+            </div>
+            <div class="nright">
+              <a href="" class="nlink">Our Members</a>
+              <a href="/" class="nlink">Add Places</a>
+            </div>
+        </div>
+        <div class="container">
+          <div class="member">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_UX150_CR0,0,150,218_AL_.jpg" alt="Member 1">
+            <h2>John Doe</h2>
+            <p>CEO</p>
+          </div>
+          <div class="member">
+            <img src="https://m.media-amazon.com/images/M/MV5BMWZlMzRkZmYtZTg0My00MGE2LWFhZWQtOTRmZGQxMWY5OTJhXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_UX150_CR0,0,150,218_AL_.jpg" alt="Member 2">
+            <h2>Jane Smith</h2>
+            <p>CTO</p>
+          </div>
+          <div class="member">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTU2MTI0NTIyNV5BMl5BanBnXkFtZTcwMTA4Nzc3OA@@._V1_UX150_CR0,0,150,218_AL_.jpg" alt="Member 3">
+            <h2>Michael Johnson</h2>
+            <p>COO</p>
+          </div>
+          <div class="member">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY218_CR15,0,150,218_AL_.jpg" alt="Member 4">
+            <h2>Alice Williams</h2>
+            <p>CFO</p>
+          </div>
+          <div class="member">
+            <img src=https://m.media-amazon.com/images/M/MV5BNWIzZTI1ODUtZTUzMC00NTdiLWFlOTYtZTg4MGZkYmU4YzNlXkEyXkFqcGdeQXVyNTExOTk5Nzg@._V1_UX150_CR0,0,150,218_AL_.jpg" alt="Member 5">
+            <h2>David Brown</h2>
+            <p>CMO</p>
+          </div>
+          <div class="member">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTk2NDc2ODgzMF5BMl5BanBnXkFtZTcwMTMzOTQ4Nw@@._V1_UX150_CR0,0,150,218_AL_.jpg" alt="Member 6">
+            <h2>Sarah Lee</h2>
+            <p>CTO</p>
+          </div>
+        </div>
+        <div class="footer">
+            Copywright 
+            <i class="ri-copyright-line"></i>
+            2024 Souradeep. All Right Reserved
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

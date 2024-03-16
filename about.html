@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #showMoreBtn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    #showMoreBtn:hover {
+      background-color: #0056b3;
+    }
+
+    .team-member {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="about">
+      <h2>About Us</h2>
+      <p>We are a team of passionate individuals dedicated to delivering high-quality products and services to our customers.</p>
+      <button id="showMoreBtn">Show More</button>
+      <div id="moreInfo" class="hidden">
+        <p>Our company was founded in 20XX with the mission to revolutionize the industry and make a positive impact on the world. We believe in innovation, collaboration, and continuous improvement.</p>
+        <h3>Our Team</h3>
+        <div class="team-member">
+          <img src="member1.jpg" alt="Member 1">
+          <h4>John Doe</h4>
+          <p>CEO</p>
+          <p>John is the visionary leader behind our company. With his strategic thinking and strong leadership skills, he drives our team towards success.</p>
+        </div>
+        <div class="team-member">
+          <img src="member2.jpg" alt="Member 2">
+          <h4>Jane Smith</h4>
+          <p>CTO</p>
+          <p>Jane oversees our technology strategy and ensures that our products are built with the latest technologies and best practices.</p>
+        </div>
+        <!-- Add more team members as needed -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('showMoreBtn').addEventListener('click', function() {
+      var moreInfo = document.getElementById('moreInfo');
+      if (moreInfo.classList.contains('hidden')) {
+        moreInfo.classList.remove('hidden');
+        document.getElementById('showMoreBtn').textContent = 'Show Less';
+      } else {
+        moreInfo.classList.add('hidden');
+        document.getElementById('showMoreBtn').textContent = 'Show More';
+      }
+    });
+  </script>
+</body>
+</html>
